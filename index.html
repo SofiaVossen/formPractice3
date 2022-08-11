@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formspractice3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Aufgabenstellung
+Für diese Übung erstellen wir ein Anmeldeformular mit den folgenden Elementen:
+Name, Surname, Email, Gender (male/female), Picture, Country (Germany,France,USA), Preferred languages (HTML, CSS, JS, React), Fields of activity (IT, Design, Other)
+Erstelle das Formular mit den passenden HTML5-Elementen
+-->
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Register form</legend>
+            <!-- Input type text & email - Name, Surname,Email -->
+            <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div>
+                <label for="surname">Surname</label>
+                <input type="text" placeholder="Surname">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="Email" placeholder="Email">
+            </div>
+            <!-- Input type radio - Gender -->
+            <div>
+                <label for="Gender">Gender</label>
+                <label for="Male">Male</label>
+                <input type="radio">
+                <label for="Female">Female</label>
+                <input type="radio">
+            </div>
+            <!-- Input type file - Picture -->
+            <div>
+                <label for="Picture">Picture</label>
+                <input type="file">
+            </div>
+            <!-- drop down list with select tag - Country -->
+            <div>
+                <label for="Country">Country</label>
+                <select name="Country" id="Country">
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                    <option value="France">France</option>
+                </select>
+            </div>
+            <!-- multiple list with select tag - Prefered languages -->
+            <div>
+                <label for="prefered languages">Prefered languages</label>
+                <select name="languages" id="languages" multiple="multiple">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JS">JS</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+            <!-- Input type checkbox squares -->
+            <div>
+                <label for="field">Field of activity</label>
+                <label for="IT">IT</label>
+                <input type="checkbox">
+                <label for="Design">Design</label>
+                <input type="checkbox">
+                <label for="Other">Other</label>
+                <input type="checkbox">
+            </div>
+            <!-- Buttons -->
+            <input type="submit" value="submit">
+            <input type="submit" value="cancel">
+        </fieldset>
+    </form>
+</body>
+</html>
